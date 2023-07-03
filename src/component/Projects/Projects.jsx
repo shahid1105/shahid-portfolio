@@ -34,7 +34,7 @@ const Projects = () => {
               And can learn about sports
             </p>
             <div className="card-actions justify-center mt-5  ">
-              <Link>
+              <Link to="https://sports-talent-academy.web.app/">
                 <button className="btn btn-primary bg-gradient-to-r from-purple-400 to-orange-500">
                   Live Demo
                 </button>
@@ -57,7 +57,7 @@ const Projects = () => {
               and toys for kids.
             </p>
             <div className="card-actions justify-center mt-5  ">
-              <Link>
+              <Link to="https://toy-car-world.web.app/">
                 <button className="btn btn-primary bg-gradient-to-r from-purple-400 to-orange-500">
                   Live Demo
                 </button>
@@ -80,7 +80,7 @@ const Projects = () => {
               chefs and Thai recipes
             </p>
             <div className="card-actions justify-center mt-5 ">
-              <Link>
+              <Link to="https://kitchen-genius-client.web.app/">
                 <button className="btn btn-primary bg-gradient-to-r from-purple-400 to-orange-500">
                   Live Demo
                 </button>
