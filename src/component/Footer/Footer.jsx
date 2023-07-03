@@ -12,9 +12,11 @@ const Footer = () => {
         />
         <p className="font-bold">Shahid Hasan Portfolio</p>
         <div className="flex justify-evenly gap-3 md:gap-16 lg:gap-16 mt-8">
-          <Link>About Me</Link> <Link>Contact Me</Link> <Link>Skills</Link>{" "}
-          <Link>Projects</Link>
-          <Link>Services</Link>
+          <Link to="/about">About Me</Link>
+          <Link to="/contact">Contact Me</Link>
+          <Link to="/skills">Skills</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/services">Services</Link>
         </div>
         <p className="mt-8">Copyright © 2023 - All right reserved</p>
       </div>
