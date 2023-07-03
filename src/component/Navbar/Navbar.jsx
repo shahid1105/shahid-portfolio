@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/home"
-          className="btn btn-ghost normal-case text-4xl text-white font-bold ">
+          className="btn btn-ghost normal-case text-3xl md:text-4xl lg:text-4xl text-white font-bold ">
           <span className="bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text font-serif">
             {" "}
             Shahid Hasan

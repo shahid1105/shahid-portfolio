@@ -1,15 +1,25 @@
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <div className="mt-20">
-      <h1 className="md:text-5xl lg:text-5xl text-center font-bold font-serif">
+      <h1
+        data-aos="fade-left"
+        className="text-2xl md:text-5xl lg:text-5xl text-center font-bold font-serif">
         Projects
       </h1>
       <div className="divider w-2/6 mx-auto"></div>
       <div className="divider w-1/6 mx-auto"></div>
       <div className="mt-10 md:mx-24 lg:mx-24 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
-        <div className="card w-full bg-base-100 shadow-xl">
+        <div
+          data-aos="fade-right"
+          className="card w-full bg-base-100 shadow-xl">
           <figure>
             <img
               className="h-[300px]"
@@ -32,7 +42,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="card w-full bg-base-100 shadow-xl">
+        <div data-aos="fade-up" className="card w-full bg-base-100 shadow-xl">
           <figure>
             <img
               className="h-[300px]"
@@ -55,7 +65,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="card w-full bg-base-100 shadow-xl">
+        <div data-aos="fade-left" className="card w-full bg-base-100 shadow-xl">
           <figure>
             <img
               className="h-[300px]"

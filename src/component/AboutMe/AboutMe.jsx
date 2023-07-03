@@ -18,7 +18,7 @@ const AboutMe = () => {
     <div id="about" className="mt-10">
       <h1
         data-aos="fade-right"
-        className="md:text-5xl lg:text-5xl text-center font-bold font-serif">
+        className=" text-2xl md:text-5xl lg:text-5xl text-center font-bold font-serif">
         About Me
       </h1>
       <div className="divider w-2/6 mx-auto"></div>
@@ -30,7 +30,7 @@ const AboutMe = () => {
           I Am Shahid Hasan and{" "}
           <span className="text-red-500 ">Web Developer</span>
         </h1>
-        <p className="px-12 mt-8 text-2xl">
+        <p className="px-4 md:px-12 lg:px-12 mt-8 text-2xl">
           Dedicated web developer, Strong creative and analytical
           skills.Motivated designer and developer with experience creating
           custom websites.Strong collaboration skills and proven history of
@@ -81,14 +81,14 @@ const AboutMe = () => {
           </div>
           <div className="space-y-3 space-x-5 md:mt-8 lg:mt-8">
             <Link to="/contact">
-              <button className="btn btn-primary rounded-full">
+              <button className="btn btn-sm btn-primary md:btn-primary lg:btn-primary rounded-full mt-4">
                 Hire Me <FaHireAHelper></FaHireAHelper>{" "}
               </button>
             </Link>
             <a
               href="https://drive.google.com/uc?export=download&id=1TueRHzfdBKK_ggq-BxYcI5mwSegXAp3v"
               download>
-              <button className="btn btn-primary rounded-full">
+              <button className="btn btn-sm btn-primary md:btn-primary lg:btn-primary rounded-full mt-4">
                 Get Resume <FaDownload />
               </button>
             </a>

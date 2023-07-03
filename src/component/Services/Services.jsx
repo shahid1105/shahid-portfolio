@@ -1,16 +1,27 @@
 import { FaRocket } from "react-icons/fa";
 import { MdDesignServices, MdDeveloperMode } from "react-icons/md";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Services = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
+
   return (
     <div className="mt-20">
-      <h1 className="md:text-5xl lg:text-5xl text-center font-bold font-serif">
+      <h1
+        data-aos="fade-right"
+        className="text-2xl md:text-5xl lg:text-5xl text-center font-bold font-serif">
         Services
       </h1>
       <div className="divider w-2/6 mx-auto"></div>
       <div className="divider w-1/6 mx-auto"></div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
-        <div className="card w-[100%] bg-base-100 shadow-xl">
+        <div
+          data-aos="fade-right"
+          className="card w-[100%] bg-base-100 shadow-xl">
           <figure className="px-10 pt-10 text-red-500 text-[80px]">
             <MdDesignServices></MdDesignServices>
           </figure>
@@ -23,7 +34,9 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="card w-[100%] bg-base-100 shadow-xl">
+        <div
+          data-aos="fade-down"
+          className="card w-[100%] bg-base-100 shadow-xl">
           <figure className="px-10 pt-10 text-red-500 text-[80px]">
             <MdDeveloperMode></MdDeveloperMode>
           </figure>
@@ -36,7 +49,9 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="card w-[100%] bg-base-100 shadow-xl">
+        <div
+          data-aos="fade-left"
+          className="card w-[100%] bg-base-100 shadow-xl">
           <figure className="px-10 pt-10 text-red-500 text-[80px]">
             <FaRocket></FaRocket>
           </figure>

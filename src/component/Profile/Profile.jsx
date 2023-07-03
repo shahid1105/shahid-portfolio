@@ -33,22 +33,22 @@ const Profile = () => {
           </h1>
           <div className="space-y-3 space-x-5 md:mt-8 lg:mt-8">
             <Link to="/contact">
-              <button className="btn btn-primary rounded-full">
+              <button className="btn btn-sm btn-primary md:btn-primary lg:btn-primary rounded-full mt-4">
                 Hire Me <FaHireAHelper></FaHireAHelper>{" "}
               </button>
             </Link>
             <a
               href="https://drive.google.com/uc?export=download&id=1TueRHzfdBKK_ggq-BxYcI5mwSegXAp3v"
               download>
-              <button className="btn btn-primary rounded-full">
+              <button className="btn btn-sm btn-primary md:btn-primary lg:btn-primary rounded-full mt-4">
                 Get Resume <FaDownload />
               </button>
             </a>
           </div>
         </div>
-        <div className="mx-auto">
+        <div className="mx-auto mt-3">
           <img
-            className="w-[300px] h-[300px] rounded-full my-3 bg-white hover:mix-blend-overlay"
+            className="w-[250px] h-[250px] md:w-[300px] lg:w-[300px] md:h-[300px] lg:h-[300px] rounded-full my-3  bg-white hover:mix-blend-overlay"
             src="https://i.ibb.co/SBm53nt/IMG-1389-01.png"
             alt=""
           />
