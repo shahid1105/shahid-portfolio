@@ -4,7 +4,9 @@ import { MdDesignServices, MdDeveloperMode } from "react-icons/md";
 const Services = () => {
   return (
     <div className="mt-20">
-      <h1 className="md:text-5xl lg:text-5xl text-center">Services</h1>
+      <h1 className="md:text-5xl lg:text-5xl text-center font-bold font-serif">
+        Services
+      </h1>
       <div className="divider w-2/6 mx-auto"></div>
       <div className="divider w-1/6 mx-auto"></div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">

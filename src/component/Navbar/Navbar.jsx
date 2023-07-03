@@ -3,17 +3,23 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const navOptions = (
     <>
-      <li className="text-black md:text-white lg:text-white font-bold">
-        <Link href="">Home</Link>
+      <li className="text-black  font-bold bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text">
+        <Link to="/home">Home</Link>
       </li>
-      <li className="text-black md:text-white lg:text-white font-bold">
-        <Link href="">About Me</Link>
+      <li className="text-black  font-bold bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text">
+        <Link to="/about">About Me</Link>
       </li>
-      <li className="text-black md:text-white lg:text-white font-bold">
-        <Link href="">Resume</Link>
+      <li className="text-black  font-bold bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text">
+        <Link to="/services">Services</Link>
       </li>
-      <li className="text-black md:text-white lg:text-white font-bold">
-        <Link href="">Contact Me</Link>
+      <li className="text-black  font-bold bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text">
+        <Link to="/skills">Skills</Link>
+      </li>
+      <li className="text-black  font-bold bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text">
+        <Link to="/projects">Projects</Link>
+      </li>
+      <li className="text-black  font-bold bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text">
+        <Link to="/contact">Contact Me</Link>
       </li>
     </>
   );
@@ -43,9 +49,14 @@ const Navbar = () => {
             {navOptions}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-4xl text-white font-bold">
-          Shahid Hasan
-        </a>
+        <Link
+          to="/home"
+          className="btn btn-ghost normal-case text-4xl text-white font-bold ">
+          <span className="bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text font-serif">
+            {" "}
+            Shahid Hasan
+          </span>{" "}
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navOptions}</ul>

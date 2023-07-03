@@ -1,5 +1,6 @@
 import Typical from "react-typical";
 import { FaDownload, FaHireAHelper } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -8,19 +9,21 @@ const Profile = () => {
         <div className="mx-5 md:mt-10 lg:mt-10 md:mx-auto lg:mx-auto">
           <h1 className="md:text-2xl lg:text-2xl md:mb-5 lg:mb-5 md:mx-[50px] lg:mx-[50px]">
             Hello, I Am{" "}
-            <span className="text-red-400 font-bold">Shahid Hasan</span>
+            <span className="text-red-400 font-bold bg-gradient-to-l from-blue-500 to-red-600 text-transparent bg-clip-text">
+              Shahid Hasan
+            </span>
           </h1>
-          <h1 className="text-2xl md:text-4xl lg:text-4xl">
+          <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold bg-gradient-to-r from-blue-500 to-red-600 text-transparent bg-clip-text">
             <Typical
               loop={Infinity}
               steps={[
-                "Shahid hasan dev",
+                "Web designer",
                 2000,
-                "Full Stack dev",
+                "Full Stack developer",
                 2000,
-                "Mern Stack dev",
+                "Mern Stack developer",
                 2000,
-                "React dev",
+                "React developer",
                 2000,
               ]}
             />
@@ -29,12 +32,18 @@ const Profile = () => {
             knack of building application with front and back end operation{" "}
           </h1>
           <div className="space-y-3 space-x-5 md:mt-8 lg:mt-8">
-            <button className="btn btn-primary rounded-full">
-              Hire Me <FaHireAHelper></FaHireAHelper>{" "}
-            </button>
-            <button className="btn btn-primary rounded-full">
-              Get Resume <FaDownload></FaDownload>
-            </button>
+            <Link to="/contact">
+              <button className="btn btn-primary rounded-full">
+                Hire Me <FaHireAHelper></FaHireAHelper>{" "}
+              </button>
+            </Link>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1TueRHzfdBKK_ggq-BxYcI5mwSegXAp3v"
+              download>
+              <button className="btn btn-primary rounded-full">
+                Get Resume <FaDownload />
+              </button>
+            </a>
           </div>
         </div>
         <div className="mx-auto">
@@ -46,7 +55,7 @@ const Profile = () => {
         </div>
       </div>
       <img
-        className="w-full h-36"
+        className="w-full md:h-36 lg:36 h-10"
         src="https://i.ibb.co/WGr3gfT/360-F-323667240-1w-DLHi-C4-AXO9-Wmxo-OPf0i-Oh-Ba-En5n-Ene.png"
         alt=""
       />
