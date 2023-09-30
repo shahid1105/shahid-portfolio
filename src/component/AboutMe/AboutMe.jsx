@@ -15,7 +15,7 @@ const AboutMe = () => {
     Aos.init({ duration: 3000 });
   }, []);
   return (
-    <div id="about" className="mt-10">
+    <div id="about" className="pt-20">
       <h1
         data-aos="fade-right"
         className=" text-2xl md:text-5xl lg:text-5xl text-center font-bold font-serif">

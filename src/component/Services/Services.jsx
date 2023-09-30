@@ -10,7 +10,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="mt-20">
+    <div className="pt-20">
       <h1
         data-aos="fade-right"
         className="text-2xl md:text-5xl lg:text-5xl text-center font-bold font-serif">

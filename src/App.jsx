@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="max-w-screen-xl mx-auto">
         <Navbar></Navbar>
-        <div className="pt-20">
+        <div>
           <Outlet></Outlet>
         </div>
         <Footer></Footer>

@@ -8,7 +8,7 @@ const Projects = () => {
     Aos.init({ duration: 3000 });
   }, []);
   return (
-    <div className="mt-20">
+    <div className="pt-20">
       <h1
         data-aos="fade-left"
         className="text-2xl md:text-5xl lg:text-5xl text-center font-bold font-serif">
@@ -19,11 +19,11 @@ const Projects = () => {
       <div className="mt-10 md:mx-24 lg:mx-24 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
         <div
           data-aos="fade-right"
-          className="card w-full bg-base-100 shadow-xl">
+          className="card w-full bg-base-100 shadow-xl border-t-2">
           <figure>
             <img
-              className="h-[300px]"
-              src="https://i.ibb.co/zm2XRTL/sports-talent-academy.png"
+              className="h-[300px] w-4/6 mt-3"
+              src="https://i.ibb.co/84RLL2S/Sports-Talent-Academy-Home.png"
               alt="Sports academy"
             />
           </figure>
@@ -42,11 +42,13 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className="card w-full bg-base-100 shadow-xl">
+        <div
+          data-aos="fade-up"
+          className="card w-full bg-base-100 shadow-xl border-t-2">
           <figure>
             <img
-              className="h-[300px]"
-              src="https://i.ibb.co/pWKQbtr/toy-car.png"
+              className="h-[300px] w-4/6 mt-3"
+              src="https://i.ibb.co/T2bGb6G/Toy-Car-World.png"
               alt="toy car"
             />
           </figure>
